@@ -69,12 +69,3 @@ Dans certain cas les tokens csrf sont bien vérifié mais ne sont pas lié à un
 </html>
 ```
 Les tokens sont ici à usage unique on peu en récupérer un nouveau à chaque fois en rafraîchissant la page.
-
-
-J'ai fait une erreur sur celui là. Au début je pensais pouvoir overwrite le cookie de la victime pour le mettre le miens directement en JS.
-J'avais mis ça dans mon script mais c'est useless puisque le cookie en question a l'attribut http only :
-```
-document.cookie = "csrfKey=ratata"
-```
-
-
